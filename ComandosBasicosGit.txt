@@ -1,0 +1,14 @@
+Comandos para manipular respositório 
+
+git pull => atualizar repositório local com os do repositório remoto
+
+git status => status do projeto
+
+git add nomeArquivo => Adicionar modificações no repositório Local
+
+git add . => adiciona todos os arquivos (modificados) do repositório Local
+
+git commit -m "mensagem" => Salva alterações no repositório Local
+
+git push => Enviar Arquivos do respositório Local para respositório remoto
+
