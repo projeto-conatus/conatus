@@ -12,14 +12,14 @@
         </style>
     </head>
     <body>
-        <form method="POST">
+        <form action="./actions/validaLogin.php" method="POST">
             <label for="email"> E-mail:
-                <input type="text" id="email" name="email">
+                <input required type="text" name="email">
             </label>
             <label for="senha"> Senha:
-                <input type="password" id="senha" name="senha">
+                <input required type="password" name="senha">
             </label>
-            <input type="submit" value="Enviar" style="width: 200px;">
+            <button type="submit" name="logar" style="width: 200px;">Entrar</button>
         </form>
     </body>
 </html>

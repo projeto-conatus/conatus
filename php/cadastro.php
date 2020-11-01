@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,8 +12,7 @@
     </style>
 </head>
 <body>
-   
-  <form action="inserirdados.php" method="POST"> 
+  <form action="./actions/cadastroDados.php" method="POST"> 
         <label for="nome"> Nome:
              <input type="text" id="nome" name="nome">
          </label>
@@ -76,6 +73,5 @@
         </label>
         <input name="submit" type="submit" value="Enviar" style="width: 200px;">
   </form>
-
 </body>
 </html>

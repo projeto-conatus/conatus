@@ -1,6 +1,6 @@
 <?php
 
-include("conexaobd.php");
+require_once 'conexaobd.php';
 
 
     $nome                 = $_POST["nome"];
@@ -27,8 +27,26 @@ include("conexaobd.php");
 
 
 if(isset($_POST['submit'])) {
-    $insert = "Insert into usuario (nome,sobrenome,cpf,data_Nascimento,endereco,numero_Endereco,complemento_Endereco,
-    bairro,cidade,uf,cep,escolaridade,tipo_De_Escola,grupo_Etnico_Racial,genero,portador_Deficiencia,tipo_Deficiencia,email,senha )
+    $insert = "Insert into usuario 
+    (nome,
+    sobrenome,
+    cpf,
+    data_Nascimento,
+    endereco,
+    numero_Endereco,
+    complemento_Endereco,
+    bairro,
+    cidade,
+    uf,
+    cep,
+    escolaridade,
+    tipo_De_Escola,
+    grupo_Etnico_Racial,
+    genero,
+    portador_Deficiencia,
+    tipo_Deficiencia,
+    email,
+    senha)
        Values  ('$nome',
     '$sobrenome',
     '$cpf', 
@@ -56,8 +74,8 @@ if(isset($_POST['submit'])) {
 
     if($result){
         echo "Cadastro Efetuado com sucesso! <br> Aguarde que você será redirecionado...";
-        echo "<a href='login.php'>Caso não seja redirecionado click aqui</a> ";
-        header ('Refresh:5; login.php');
+        echo "<a href='../login.php'>Caso não seja redirecionado click aqui</a> ";
+        header ('Refresh:3; ../login.php');
         
         mysqli_close($conn);
     }
