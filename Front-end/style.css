@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(249.52deg, #3AC1F0 0%, #4E54C8 100%);
+  color: #f5f5f5;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  /* height: 66px; */
+}
+
+.logoContainer img {
+  width: 258px;
+  height: 66px;
+}
+
+.iconeMenu{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 120px;
+  right: 20px;
+}
+
+.iconeMenu span {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin-right: .5em;
+}
+
+.itensMenu {
+  visibility: hidden;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #4e54c8f1;
+  width: 245px;
+  height: 275px;
+  border-radius: 10px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #f5f5f5;
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+.botaoAcessar {
+  margin-top: 20px;
+  border: 3px solid #f5f5f5;
+  padding: 5px 18px;
+  border-radius: 5px;
+}
+
+.menuVisivel {
+  visibility: initial;
+  animation: showMenu .7s;
+}
+
+main .slogan {
+  margin-top: 120px;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: .03em;
+}
+
+.botaoEntrar {
+  border: 3px solid #f5f5f5;
+  display: flex;
+  margin: 100px auto 0 ;
+  justify-content: center;
+  width: 160px;
+  font-size: 24px;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
