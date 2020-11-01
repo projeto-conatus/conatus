@@ -9,7 +9,7 @@
         $senha = $_POST['senha'];
 
         if(strlen($email) > 0 && strlen($senha) > 0){
-            $select = "SELECT * FROM usuario WHERE email = email AND senha = senha LIMIT 1;";
+            $select = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' LIMIT 1;";
             $resultado = mysqli_query($conn, $select);
 
             while($row = mysqli_fetch_assoc($resultado) ){
@@ -20,6 +20,10 @@
 
                     header("Location: ../home.php");
                 }
+                /*else{
+                    echo "Dados Inválido!";
+                    header("Refresh: 5 Location: ../login.php");
+                }*/
             }
         }
 
