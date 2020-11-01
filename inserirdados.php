@@ -22,12 +22,14 @@ include("conexaobd.php");
     $tipo_Deficiencia     = $_POST["tipo_Deficiencia"];
     $email                = $_POST["email"];
     $senha                = $_POST["senha"];
-
    
 
+
+
 if(isset($_POST['submit'])) {
-    $insert = "Insert into usuario(nome,sobrenome,cpf,data_Nascimento,endereco,numero,complemento_Endereco,bairro,cidade,uf,cep,escolaridade,tipo_De_Escola,tipo_Deficiencia,email,senha)
-    Values  ('$nome',
+    $insert = "Insert into usuario (nome,sobrenome,cpf,data_Nascimento,endereco,numero_Endereco,complemento_Endereco,
+    bairro,cidade,uf,cep,escolaridade,tipo_De_Escola,grupo_Etnico_Racial,genero,portador_Deficiencia,tipo_Deficiencia,email,senha )
+       Values  ('$nome',
     '$sobrenome',
     '$cpf', 
     '$data_Nascimento',
@@ -42,19 +44,21 @@ if(isset($_POST['submit'])) {
     '$tipo_De_Escola', 
     '$grupo_Etnico_Racial', 
     '$genero',
-    '$portador_Deficiencia'
+    '$portador_Deficiencia',
     '$tipo_Deficiencia', 
     '$email', 
-    '$senha')";
+    '$senha');";
             
 
 
     $result = $conn->query($insert);
-    var_dump($insert);
+    
 
-    if(!$result){
-        echo "Não foi inserido!";
-    }else {
+    if($result){
+        echo "Cadastro Efetuado com sucesso! <br> Aguarde que você será redirecionado...";
+        echo "<a href='login.php'>Caso não seja redirecionado click aqui</a> ";
+        header ('Refresh:5; login.php');
+        
         mysqli_close($conn);
     }
    

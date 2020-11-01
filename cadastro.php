@@ -61,11 +61,10 @@
         <label for="genero"> Gênero:
             <input type="text" id="genero" name="genero">
         </label>
-        <!--<label for="portador_Deficiencia"> Portador de Deficiência?
-
-            <input type="text" name="portador_Deficiencia" placeholder="Sim/Não">
-                     
-        </label>-->
+        <label for="portador_Deficiencia"> Portador de Deficiência?
+            <input type="radio" value="sim"  name="portador_Deficiencia" > sim   
+            <input type="radio" value="nao"  name="portador_Deficiencia" > não
+        </label>
         <label for="tipo_Deficiencia"> Tipo de Deficiência:
             <input type="text" id="tipo_Deficiencia" name="tipo_Deficiencia">
         </label>
@@ -73,7 +72,7 @@
             <input type="text" id="email" name="email">
         </label>
         <label for="senha"> Senha:
-            <input type="password" id="senha" name="senha">
+            <input type="text" id="senha" name="senha">
         </label>
         <input name="submit" type="submit" value="Enviar" style="width: 200px;">
   </form>
