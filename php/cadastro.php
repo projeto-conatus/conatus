@@ -1,77 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Conatus</title>
-    <style>
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-</head>
+<?php 
+    include('../includes/head.html');
+?>
+
 <body>
-  <form action="./actions/cadastroDados.php" method="POST"> 
-        <label for="nome"> Nome:
-             <input type="text" id="nome" name="nome">
-         </label>
-         <label for="sobrenome"> sobrenome:
-            <input type="text" id="sobrenome" name="sobrenome">
-        </label>
-        <label for="cpf"> CPF:
-            <input type="text" id="cpf" name="cpf">
-        </label>
-        <label for="data_Nascimento"> Data de nascimento:
-            <input type="text" id="data_Nascimento" name="data_Nascimento">
-        </label>
-        <label for="endereco"> Endereço:
-            <input type="text" id="endereco" name="endereco">
-        </label>
-        <label for="numero"> Número:
-            <input type="text" id="numero" name="numero">
-        </label>
-        <label for="complemento_Endereco"> Complemento:
-            <input type="text" id="complemento_Endereco" name="complemento_Endereco">
-        </label>
-        <label for="bairro"> Bairro:
-            <input type="text" id="bairro" name="bairro">
-        </label>
-        <label for="cidade"> Cidade:
-            <input type="text" id="cidade" name="cidade">
-        </label>
-        <label for="uf"> UF:
-            <input type="text" id="uf" name="uf">
-        </label>
-        <label for="cep"> CEP:
-            <input type="text" id="cep" name="cep">
-        </label>
-        <label for="escolaridade"> Escolaridade:
-            <input type="text" id="escolaridade" name="escolaridade">
-        </label>
-        <label for="tipo_De_Escola"> Tipo de Escola:
-            <input type="text" id="tipo_De_Escola" name="tipo_De_Escola">
-        </label>
-        <label for="grupo_Etnico_Racial"> Grupo Étnico Racial:
-            <input type="text" id="grupo_Etnico_Racial" name="grupo_Etnico_Racial">
-        </label>
-        <label for="genero"> Gênero:
-            <input type="text" id="genero" name="genero">
-        </label>
-        <label for="portador_Deficiencia"> Portador de Deficiência?
-            <input type="radio" value="sim"  name="portador_Deficiencia" > sim   
-            <input type="radio" value="nao"  name="portador_Deficiencia" > não
-        </label>
-        <label for="tipo_Deficiencia"> Tipo de Deficiência:
-            <input type="text" id="tipo_Deficiencia" name="tipo_Deficiencia">
-        </label>
-        <label for="email"> E-mail:
-            <input type="text" id="email" name="email">
-        </label>
-        <label for="senha"> Senha:
-            <input type="text" id="senha" name="senha">
-        </label>
-        <input name="submit" type="submit" value="Enviar" style="width: 200px;">
-  </form>
+    <div class="container">
+        <form>
+            <div class="col-md-6 offset-md-3">
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="">
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="CPF">CPF</label>
+                        <input type="text" class="form-control" id="CPF" placeholder="">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="data_Nascimento">Data nascimento</label>
+                        <input type="text" class="form-control" id="data_Nascimento" placeholder="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="numero">Numero</label>
+                        <input type="text" class="form-control" id="numero">
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="complemento_Endereco">Complemento</label>
+                        <input type="text" class="form-control" id="complemento_Endereco" placeholder="">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="uf">UF</label>
+                        <input type="text" class="form-control" id="uf">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="escolaridade">Escolaridade</label>
+                        <input type="text" class="form-control" id="escolaridade" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tipo_De_Escola">Tipo de Escola</label>
+                        <input type="text" class="form-control" id="tipo_De_Escola" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="grupo_Etnico_Racial"> Grupo Étnico Racial:</label>
+                        <input type="text" class="form-control" id="grupo_Etnico_Racial" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="genero">Gênero</label>
+                        <input type="text" class="form-control" id="genero" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="portador_Deficiencia"> Deficiente fisico?</label>
+                        <input type="text" class="form-control" id="portador_Deficiencia" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tipo_Deficiencia">Tipo de Deficiência:</label>
+                        <input type="text" class="form-control" id="tipo_Deficiencia" placeholder="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="email@exemplo.com">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Senha</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Senha">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+    </div>
+<?php 
+    include('../includes/footer.html');
+?>
 </body>
 </html>

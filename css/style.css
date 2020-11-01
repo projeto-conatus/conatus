@@ -5,7 +5,6 @@
   margin: 0;
 }
 
-
 body {
   width: 100%;
   min-height: 100vh;
@@ -58,6 +57,7 @@ header {
 }
 
 .itensMenu {
+  z-index: 1;
   visibility: hidden;
   position: absolute;
   top: 150px;
@@ -131,6 +131,7 @@ main .slogan {
   letter-spacing: .1em;
 }
 
+<<<<<<< HEAD
 .redesSociais {
   display: none;
 }
@@ -237,4 +238,9 @@ main .slogan {
     list-style: none;
     font-size: 2em;
   }
+=======
+footer {
+  margin: 2vh;
+  text-align: center;
+>>>>>>> 7183b90e97699f42d9debf192f95a456310398af
 }
