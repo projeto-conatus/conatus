@@ -11,20 +11,21 @@
         if(strlen($email) > 0 && strlen($senha) > 0){
             $select = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' LIMIT 1;";
             $resultado = mysqli_query($conn, $select);
+            $num_row = mysqli_num_rows($resultado);
+            $row=mysqli_fetch_array($resultado);
 
-            while($row = mysqli_fetch_assoc($resultado) ){
-                if ($row['id_Usuario']){
-                    $_SESSION['id_Usuario'] = $row['id_Usuario'];
-                    $_SESSION['nome'] = $row['nome'];
-                    $_SESSION['email'] = $row['email'];
+            if( $num_row ==1 ){
+                $_SESSION['id_Usuario']=$row['id_Usuario'];
+                header("Location: ../home.php");
 
-                    header("Location: ../home.php");
-                }
-                /*else{
-                    echo "Dados Inválido!";
-                    header("Refresh: 5 Location: ../login.php");
-                }*/
+            } else {
+                echo ("<SCRIPT LANGUAGE='JavaScript'>
+                window.alert('Usuário ou senha incorreto!')
+                window.location.href='../login.php';
+                </SCRIPT>");
             }
+
+            
         }
 
     }
