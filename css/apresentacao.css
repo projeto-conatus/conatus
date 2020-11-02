@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+.apresentacao {
+  font-family: 'Nunito', sans-serif;
+  color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3em 1em 0;
+  text-align: justify;
+}
+
+.apresentacao h2, h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.apresentacao h2 {
+  font-size: 1.57em;
+}
+
+.apresentacao p {
+  text-indent: 1em;
+  font-size: 1.15em;
+}
+
+.apresentacao article {
+  margin-bottom: 3em;
+}
+
+.apresentacao img {
+  display: flex;
+  margin: 0 auto 2em;
+}
+
+.arteDuvida {
+  width: 145px;
+}
+
+.arteEspecialistas {
+  width: 270px;
+}
+
+.arteEscolha {
+  width: 230px;
+}
+
+.botaoSaibaMais {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  background: #4E54C8;
+  border-radius: .3em;
+  padding: .5em 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer {
+  background: url(/images/bg_detail_footer.svg) no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .logoFooter {
+  padding: .5em 0;
+  width: 60px;
+}
+
+footer .redesSociais {
+  font-size: 2.3em;
+  display: flex;
+  list-style: none;
+}
+
+footer .redesSociais li{
+  padding-top: .5em;
+  box-sizing: border-box;
+}
+
+footer .redesSociais li:last-child {
+  padding-right: 1em;
+}
+
+footer .redesSociais i {
+  padding: .3em;
+}
+
+@media (min-width: 940px) {
+  .apresentacao {
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .arteDuvida {
+    width: initial;
+  }
+
+  .arteEspecialistas {
+    width: initial;
+  }
+
+  .arteEscolha {
+    width: initial;
+  }
+}
