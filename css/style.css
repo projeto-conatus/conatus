@@ -53,11 +53,11 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .1em;
-  margin-right: .5em;
+  margin-right: .7em;
 }
 
 .itensMenu {
-  z-index: 1;
+  z-index: 10;
   visibility: hidden;
   position: absolute;
   top: 150px;
@@ -120,7 +120,7 @@ main .slogan {
 .botaoEntrar {
   border: 3px solid #f5f5f5;
   display: flex;
-  margin: 70px auto 0 ;
+  margin: 100px auto 0 ;
   justify-content: center;
   width: 160px;
   font-size: 24px;
@@ -137,10 +137,16 @@ main .slogan {
 
 @media (min-width: 940px) {
   header {
-    display: flex;
-    width: clamp(750px, 1200px, 1400px);
+    width: 100%;
     height: 200px;
     margin: 3em auto 1em;
+
+  }
+
+  .headerContainer {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
   }
@@ -150,8 +156,8 @@ main .slogan {
   }
 
   .logoContainer img {
-    width: clamp(200px, 500px, 500px);
-    height: 110px;
+    width: 100%;
+    height: 115px;
   }
 
   .iconeMenu {
@@ -165,12 +171,13 @@ main .slogan {
     flex-direction: row;
     justify-content: right;
     position: initial;
+    transform: initial;
     align-items: center;
-    width: 10%;
+    width: initial;
+    line-height: initial;
   }
 
   .itensMenu li {
-    height: 20px;
     margin: 0 .5em;
   }
 
@@ -179,7 +186,8 @@ main .slogan {
   }
 
   .itensMenu li a:hover {
-    color: #4E54C8;
+    color: #1d238b;
+    border-bottom: 1px solid #1d238b;
   }
 
   .itensMenu li:last-child {
@@ -188,7 +196,6 @@ main .slogan {
 
   .itensMenu .botaoAcessar{
     margin-left: 1em;
-    transition: .3s;
 }
 
   .itensMenu .botaoAcessar:hover {
@@ -198,31 +205,40 @@ main .slogan {
   }
 
   main {
-    width: clamp(750px, 1200px, 1400px);
-    height: 445px;
+    width: 60%;
+    padding-left: .1em;
     margin: 8em auto 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: stretch;
+    grid-template-columns: 2fr 1fr;
+    box-sizing: border-box;
+    grid-template-areas: "text img"
+                         "text img"
+                         "bt   img ";
+
   }
 
   main .slogan{
+    padding-top: 1em;
     font-size: 4em;
     text-align: left;
-    width: 440px;
-    margin: 0 auto 0 0;
-    line-height: 1.3;
+    margin: 0;
+    line-height: 1.1;
     padding-left: .1em;
+    grid-area: text;
   }
 
   main .arteHomePageDesktop {
     display: initial;
-    margin: 0em 0 0 auto;
-    width: 490px;
-    height: 445px;
+    grid-area: img;
   }
 
   main .botaoEntrar {
+    grid-area: bt;
+    align-self: flex-end;
+    width: 190px;
+    height: 50px;
+    align-items: center;
+    padding: 0;
     margin: 0;
     transition: .3s;
   }
