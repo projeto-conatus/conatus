@@ -124,7 +124,7 @@ footer .redesSociais {
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 940px) {
   .apresentacao {
     width: 70%;
     flex-wrap: wrap;
@@ -144,6 +144,8 @@ footer .redesSociais {
   }
   
   .apresentacao p {
+    width: 70%;
+    margin: 0 auto;
     text-indent: 1em;
     font-size: 2em;
   }
@@ -163,6 +165,7 @@ footer .redesSociais {
   }
 
   .oQueFazemosParagrafo {
+    width: 100%;
     grid-area: texto;
   }
 
@@ -172,11 +175,11 @@ footer .redesSociais {
   }
 
   .arteEspecialistas {
-    width: 100%;
+    width: initial;
   }
 
   .arteEscolha {
-    width: 100%;
+    width: initial;
   }
 
   .botaoSaibaMais {
