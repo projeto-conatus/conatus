@@ -19,10 +19,15 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1em;
+  letter-spacing: .1em;
 }
 
 .apresentacao h2 {
   font-size: 1.57em;
+}
+
+.apresentacao h3 {
+  font-weight: 600;
 }
 
 .apresentacao p {
@@ -199,7 +204,7 @@ footer .redesSociais {
   footer .footerContainer{
     width: 99.9%;
     height: 120px;
-    padding: 0 5em;
+    padding: 0 17em;
   }
 
   footer .logoFooter {
@@ -212,11 +217,11 @@ footer .redesSociais {
   }
 
   .redesSociais h4 {
-    font-size: .7em;
+    font-size: .65em;
   }
 
   .redesSociais .icones {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .icones i {

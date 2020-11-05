@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="../images/logotrans.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/headerOutrasPaginas.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <link rel="stylesheet" href="../css/estilologin.css" />
 
-    <title>Login - Conatus</title>
+    <title>Login | Conatus</title>
   </head>
   <body>
     <header>
@@ -19,48 +20,41 @@
 
         <div class="logoContainer">
           <img src="../images/logo.svg" alt="Logo da Conatus">
+          <span>Conatus</span>
         </div>
 
         <nav class="navBar">
-          <div class="iconeMenu" onclick="exibeMenu()">
-            <span>Voltar</span>
+          <a href="#" class="botaoInicio">Início</a>
+          <div class="iconeVoltar">
+            <a href="#"><img src="../images/arrow-back.svg" alt="botão para voltar a página inicial"></a>
           </div>
 
-          <ul class="itensMenu ">
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-            <li ><a href="#" class="botaoAcessar">Acessar</a></li>
-          </ul>
-        </nav>
-      </div>
-
     </header>
- <main>
-  <h4>Login</h4>
- </main>
-   
-    
-    <div class="formulario">
-      <form method="POST">
-        <label for="email">E-mail:</label>
-        <input
-          type="text"
-          id="email"
-          placeholder="Digite seu e-mail"
-          name="email"
-        />
-        <label for="senha">Senha:</label>
-        <input
-          type="password"
-          id="senha"
-          placeholder="Digite sua senha"
-          name="senha"
-        />
-        <input class="enviar" type="submit" value="Enviar" />
-      </form>
-      <img src="../images/arte_rapaz.svg" alt="Logo do menino" />
-    </div>
+
+    <main>
+      <h4 class="tituloLogin">Login</h4>
+        <div class="formulario">
+          <form method="POST">
+            <label for="email">E-mail:</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Digite seu e-mail"
+              name="email"
+            />
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              placeholder="Digite sua senha"
+              name="senha"
+            />
+            <input class="enviar" type="submit" value="Enviar" />
+          </form>
+          <img src="../images/arte_rapaz.svg" alt="Logo do menino" />
+        </div>
+      </main>
+
     <script src="../scripts/script.js"></script>
   </body>
 </html>
