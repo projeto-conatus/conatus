@@ -6,51 +6,59 @@ require_once 'conexaobd.php';
     $nome                 = $_POST["nome"];
     $sobrenome            = $_POST["sobrenome"];
     $cpf                  = $_POST["cpf"];
-    $data_Nascimento      = $_POST["data_Nascimento"];
-    $endereco             = $_POST["endereco"];
-    $numero               = $_POST["numero"];
-    $complemento_Endereco = $_POST["complemento_Endereco"];
-    $bairro               = $_POST["bairro"];
-    $cidade               = $_POST["cidade"];
-    $uf                   = $_POST["uf"];
-    $cep                  = $_POST["cep"];
+    $dataNascimento       = $_POST["dataNascimento"];
     $escolaridade         = $_POST["escolaridade"];
-    $tipo_De_Escola       = $_POST["tipo_De_Escola"];
-    $grupo_Etnico_Racial  = $_POST["grupo_Etnico_Racial"];
+    $tipoEscola           = $_POST["tipoEscola"];
+    $raca                 = $_POST["raca"];
     $genero               = $_POST["genero"];
-    $portador_Deficiencia = $_POST["portador_Deficiencia"];
-    $tipo_Deficiencia     = $_POST["tipo_Deficiencia"];
+    $deficiencia          = $_POST["deficiencia"];
+    $tipo_Deficiencia     = $_POST["tipoDeficiencia"];
     $email                = $_POST["email"];
     $senha                = $_POST["senha"];
    
 
 
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['cadastrar'])) {
     $insert = "Insert into usuario 
     (nome,
     sobrenome,
     cpf,
-    data_Nascimento,
-    endereco,
-    numero_Endereco,
-    complemento_Endereco,
-    bairro,
-    cidade,
-    uf,
-    cep,
+    dataNascimento,
     escolaridade,
-    tipo_De_Escola,
-    grupo_Etnico_Racial,
+    tipoEscola,
+    raca,
     genero,
-    portador_Deficiencia,
-    tipo_Deficiencia,
+    deficiencia,
+    tipoDeficiencia,
     email,
     senha)
        Values  ('$nome',
     '$sobrenome',
     '$cpf', 
-    '$data_Nascimento',
+    '$dataNascimento',
+    '$escolaridade', 
+    '$tipoEscola', 
+    '$raca', 
+    '$genero',
+    '$deficiencia',
+    '$tipo_Deficiencia',
+    '$email', 
+    '$senha');";
+
+
+
+            
+    /*Implementação posterior:
+    $endereco             = $_POST["endereco"];
+    $numero               = $_POST["numeroEndereco"];
+    $complemento_Endereco = $_POST["complementoEndereco"];
+    $bairro               = $_POST["bairro"];
+    $cidade               = $_POST["cidade"];
+    $uf                   = $_POST["uf"];
+    $cep                  = $_POST["cep"];
+
+
     '$endereco',
     '$numero',
     '$complemento_Endereco', 
@@ -58,24 +66,17 @@ if(isset($_POST['submit'])) {
     '$cidade', 
     '$uf', 
     '$cep', 
-    '$escolaridade', 
-    '$tipo_De_Escola', 
-    '$grupo_Etnico_Racial', 
-    '$genero',
-    '$portador_Deficiencia',
-    '$tipo_Deficiencia', 
-    '$email', 
-    '$senha');";
-            
+
+    */
 
 
     $result = $conn->query($insert);
     
 
     if($result){
-        echo "Cadastro Efetuado com sucesso! <br> Aguarde que você será redirecionado...";
-        echo "<a href='../login.php'>Caso não seja redirecionado click aqui</a> ";
-        header ('Refresh:3; ../login.php');
+       echo ("<SCRIPT LANGUAGE='JavaScript'>
+                window.location.href='../login.php';
+                </SCRIPT>");
         
         mysqli_close($conn);
     }

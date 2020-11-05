@@ -9,14 +9,14 @@
         $senha = $_POST['senha'];
 
         if(strlen($email) > 0 && strlen($senha) > 0){
-            $select = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' LIMIT 1;";
+            $select    = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' LIMIT 1;";
             $resultado = mysqli_query($conn, $select);
-            $num_row = mysqli_num_rows($resultado);
-            $row=mysqli_fetch_array($resultado);
+            $num_row   = mysqli_num_rows($resultado);
+            $row       = mysqli_fetch_array($resultado);
 
-            if( $num_row ==1 ){
-                $_SESSION['id_Usuario']=$row['id_Usuario'];
-                header("Location: ../home.php");
+            if( $num_row == 1 ){
+                $_SESSION['idUsuario'] = $row['idUsuario'];
+                header("Location: ../../html/feed.html");
 
             } else {
                 echo ("<SCRIPT LANGUAGE='JavaScript'>
