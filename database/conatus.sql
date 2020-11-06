@@ -50,10 +50,7 @@ CREATE TABLE IF NOT EXISTS `feed` (
   `idRaca` int(11) DEFAULT NULL,
   `conteudo` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`idFeed`),
-  UNIQUE KEY `idFeed` (`idFeed`),
-  KEY `idDeficiencia` (`idDeficiencia`),
-  KEY `idGenero` (`idGenero`),
-  KEY `idRaca` (`idRaca`)
+  UNIQUE KEY `idFeed` (`idFeed`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -67,8 +64,7 @@ CREATE TABLE IF NOT EXISTS `genero` (
   `idGenero` int(11) NOT NULL AUTO_INCREMENT,
   `genero` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`idGenero`),
-  UNIQUE KEY `idGenero` (`idGenero`),
-  KEY `genero` (`genero`)
+  UNIQUE KEY `idGenero` (`idGenero`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -82,8 +78,7 @@ CREATE TABLE IF NOT EXISTS `raca` (
   `idRaca` int(11) NOT NULL AUTO_INCREMENT,
   `raca` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`idRaca`),
-  UNIQUE KEY `idRaca` (`idRaca`),
-  KEY `raca` (`raca`)
+  UNIQUE KEY `idRaca` (`idRaca`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -97,23 +92,24 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `sobrenome` varchar(100) NOT NULL,
-  `cpf` varchar(12) NOT NULL,
+  `cpf` varchar(16) NOT NULL,
   `dataNascimento` varchar(10) NOT NULL,
-  `endereco` varchar(100) DEFAULT NULL,
-  `numeroEndereco` varchar(10) DEFAULT NULL,
-  `complementoEndereco` varchar(100) DEFAULT NULL,
-  `bairro` varchar(100) DEFAULT NULL,
-  `cidade` varchar(20) DEFAULT NULL,
-  `uf` varchar(2) DEFAULT NULL,
-  `cep` varchar(11) DEFAULT NULL,
-  `escolaridade` varchar(50) DEFAULT NULL,
-  `tipoEscola` varchar(50) DEFAULT NULL,
+  `endereco` varchar(100),
+  `numeroEndereco` varchar(10),
+  `complementoEndereco` varchar(100),
+  `bairro` varchar(100),
+  `cidade` varchar(20),
+  `uf` varchar(2),
+  `cep` varchar(11),
+  `escolaridade` varchar(50),
+  `tipoEscola` varchar(50),
   `raca` varchar(50) NOT NULL,
   `genero` varchar(50) NOT NULL,
-  `deficiencia` varchar(3) NOT NULL,
+  `deficiencia` varchar(6) NOT NULL,
+  `tipoDeficiencia` varchar(10),
   `email` varchar(50) NOT NULL,
   `senha` varchar(50) NOT NULL,
-  PRIMARY KEY (`idUsuario`,`deficiencia`,`genero`,`raca`),
+  PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `id_Usuario` (`idUsuario`),
   UNIQUE KEY `cpf` (`cpf`),
   UNIQUE KEY `email` (`email`)
