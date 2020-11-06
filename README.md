@@ -18,4 +18,4 @@
 - [x] Login de usuário
 - [x] Cadastro de cliente
 - [ ] Página principal com o feed de notícias
-- [ ] link direcionado para os serviços
+- [ ] Link direcionado para os serviços
