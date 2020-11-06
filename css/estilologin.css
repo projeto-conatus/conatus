@@ -58,18 +58,19 @@ input {
   height: 36px;
 }
 
-.enviar {
+.botaoEntrar {
   background-color: #4D57C9 ;
   color: #E5E5E5;
   text-transform: uppercase;
   letter-spacing: .05em;
   font-weight: bold;
+  text-align: center;
 }
 
 @media (min-width: 940px) {
   .tituloLogin {
-    margin-top: 3em;
-    font-size: 1.8em;
+    margin-top: 2.3em;
+    font-size: 1.7em;
     font-weight: bold;
   }
 
@@ -93,12 +94,12 @@ input {
     grid-area: form;
   }
 
-  .enviar {
+  .botaoEntrar {
     margin-top: 1.5em;
     cursor: pointer;
   }
 
-  .enviar:hover {
+  .botaoEntrar:hover {
     background: #4050b4;
   }
 

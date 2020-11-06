@@ -38,7 +38,7 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: bold;
-  width: 100px;
+  width: 120px;
   margin-bottom: .8em;
   text-decoration: none;
   padding: .2em 3em;
@@ -48,24 +48,26 @@ body {
 
 @media (min-width: 940px) {
   .tituloAcesso {
-    margin-top: 3em;
+    margin-top: 2.3em;
     font-size: 1.7em;
   }
 
 
   .escolha {
-    margin: 3em auto 0;
+    margin: .5em auto 0;
     width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
   }
 
   .escolha img {
-    width: initial;
+    width: 150px;
     margin: 0;
     padding-bottom: 1em;
+    height: 368px;
   }
 
   .botaoEscolha {

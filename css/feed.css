@@ -49,6 +49,7 @@ header {
   
   .botaoInicio {
     display: none;
+    font-family: 'Nunito', sans-serif;
   }
   
   .iconeVoltar{
@@ -173,18 +174,17 @@ header {
     .pagina {
         width: 70%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         justify-content: center; 
         align-items: center;
         grid-template-areas: "imagem feed";
-        margin: 5em auto;
-        padding: 20px;
+        margin: 3.5em auto 0;
     }
     
     
     .pagina img {
         margin: 0;
-        width: initial;
+        width: 400px;
         align-items: center;
         grid-area: imagem;
     }
@@ -196,15 +196,15 @@ header {
 
     .feedPersonalizado h2 {
         margin: 0;
-        font-size: 45px;
+        font-size: 2.2em;
     }
     
     .feedPersonalizado p {
-        font-size: 30px;
+        font-size: 1.2em;
     }
 
     .icones {
-        font-size: 2em;
+        font-size: 1.2em;
     }
 
     .icones i {
