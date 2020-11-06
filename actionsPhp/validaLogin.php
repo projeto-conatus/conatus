@@ -16,12 +16,12 @@
 
             if( $num_row == 1 ){
                 $_SESSION['idUsuario'] = $row['idUsuario'];
-                header("Location: ../../html/feed.html");
+                header("Location: ../views/feed.html");
 
             } else {
                 echo ("<SCRIPT LANGUAGE='JavaScript'>
                 window.alert('Usuário ou senha incorreto!')
-                window.location.href='../login.php';
+                window.location.href='../views/login.html';
                 </SCRIPT>");
             }
 

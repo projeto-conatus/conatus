@@ -36,12 +36,13 @@
     <main>
         <h4 class="tituloLogin">Login</h4>
         <div class="formulario">
-            <form action="../actionsPhp/validaLogin.php" method="POST ">
-                <label for="email ">E-mail:</label>
-                <input type="text " id="email " placeholder="Digite seu e-mail " name="email " />
-                <label for="senha ">Senha:</label>
-                <input type="password " id="senha " placeholder="Digite sua senha " name="senha " />
-                <input class="enviar " type="submit " value="Enviar " />
+            <form action="../actionsPhp/validaLogin.php" method="POST">
+                <label for="email">E-mail:</label>
+                <input required type="text" id="email" placeholder="Digite seu e-mail" name="email" />
+                <label for="senha">Senha:</label>
+                <input required type="password" id="senha" placeholder="Digite sua senha" name="senha" />
+                <!--<input class="enviar" name="logar" type="submit " value="Entrar" />-->
+                <button class="enviar" name="logar" type="submit ">Entrar</button>
             </form>
             <img src="../images/arte_rapaz.svg " alt="Logo do menino " />
         </div>

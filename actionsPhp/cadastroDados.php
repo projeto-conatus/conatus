@@ -75,7 +75,7 @@ if(isset($_POST['cadastrar'])) {
 
     if($result){
        echo ("<SCRIPT LANGUAGE='JavaScript'>
-                window.location.href='../login.php';
+                window.location.href='../views/login.html';
                 </SCRIPT>");
         
         mysqli_close($conn);
