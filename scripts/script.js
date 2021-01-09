@@ -1,5 +1,6 @@
-const menu = document.querySelector('ul')
+const menu = document.querySelector("ul");
+const botaoMenu = document.querySelector(".botaoMenu");
 
-function exibeMenu() {
-  menu.classList.toggle('menuVisivel');
-}
+botaoMenu.addEventListener("click", () => {
+  menu.classList.toggle("menuVisivel");
+});

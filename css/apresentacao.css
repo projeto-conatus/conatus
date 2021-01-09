@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
 .apresentacao {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #111111;
   display: flex;
   flex-direction: column;
@@ -11,29 +11,31 @@
 }
 
 .mainApresentacao {
-  border-radius: .5em;
+  border-radius: 0.5em;
   background: #e1e1e1;
 }
 
-.apresentacao h2, h3 {
+.apresentacao h2,
+h3 {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .apresentacao h2 {
+  margin-bottom: .5rem;
   font-size: 1.57em;
 }
 
 .apresentacao h3 {
   font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 .apresentacao p {
   text-indent: 1em;
   font-size: 1.1em;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   box-sizing: border-box;
 }
 
@@ -63,12 +65,12 @@
   margin: 1em auto 0;
   display: flex;
   justify-content: center;
-  background: #4E54C8;
-  border-radius: .3em;
-  padding: .5em 1em;
+  background: #4e54c8;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
   font-size: 1.3em;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -79,55 +81,53 @@ footer {
 }
 
 footer .footerContainer {
-  background: linear-gradient(249.52deg, #3AC1F0 0%, #4E54C8 100%);
-  height: 90px;
-  width: 99%;
+  background: linear-gradient(249.52deg, #3ac1f0 0%, #4e54c8 100%);
+  height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  border-radius: .9em .9em 0 0;
-  padding: 0 1em;
+  padding: 0 0.5em;
   box-sizing: border-box;
 }
 
 footer .logoFooter {
-  width: 70px;
+  width: 55px;
 }
 
 footer p {
   text-align: center;
-  width: 90px;
+  /* justify-self: center; */
+  font-size: 12px;
 }
 
-footer .redesSociais {
+footer .linksContato {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80px;
 }
 
-
-.redesSociais h4 {
+.linksContato h4 {
   text-transform: lowercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   height: 15px;
+  width: 95px;
+  text-align: center;
 }
 
-.redesSociais .icones {
-  margin-top: .3em;
+.linksContato .icones {
+  margin-top: 0.3em;
   list-style: none;
   display: flex;
-  font-size: 2.3em;
-  
+  font-size: 2em;
 }
 
-
-.redesSociais .icones i {
-  padding: .2em;
+.linksContato .icones i {
+  padding: 0.2em;
 }
-
-
 
 @media (min-width: 940px) {
   .apresentacao {
@@ -143,25 +143,27 @@ footer .redesSociais {
   .apresentacao h3 {
     font-size: 1.5em;
   }
-  
+
   .apresentacao h2 {
     font-size: 2.5em;
   }
-  
+
   .apresentacao p {
     width: 70%;
     margin: 0 auto;
     text-indent: 1em;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .oQueFazemos {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    justify-content: space-around;
     align-items: center;
-    grid-template-areas: "titulo titulo"
-                         "texto img"
-                         "texto img";
+    grid-template-areas:
+      "titulo titulo"
+      "texto img"
+      "texto img";
   }
 
   .oQueFazemosTitulo {
@@ -172,19 +174,21 @@ footer .redesSociais {
   .oQueFazemosParagrafo {
     width: 100%;
     grid-area: texto;
+    margin: 0 0 0 14rem !important;
   }
 
   .arteDuvida {
     grid-area: img;
-    width: initial;
+    width: 320px;
+    margin: 0 0 2rem !important;
   }
 
   .arteEspecialistas {
-    width: initial;
+    width: 720px;
   }
 
   .arteEscolha {
-    width: initial;
+    width: 720px;
   }
 
   .botaoSaibaMais {
@@ -192,17 +196,15 @@ footer .redesSociais {
     justify-content: center;
     margin: 1em auto;
     width: 200px;
-    padding: .8em 0;
-    transition: .3s;
+    padding: 0.8em 0;
+    transition: 0.3s;
   }
 
   .botaoSaibaMais:hover {
-    background: #6A70E1 ;
+    background: #6a70e1;
   }
 
-
-  footer .footerContainer{
-    width: 99.9%;
+  footer .footerContainer {
     height: 120px;
     padding: 0 17em;
   }
@@ -216,19 +218,19 @@ footer .redesSociais {
     width: initial;
   }
 
-  .redesSociais h4 {
-    font-size: .65em;
+  .linksContato h4 {
+    font-size: 0.65em;
   }
 
-  .redesSociais .icones {
+  .linksContato .icones {
     font-size: 1.3em;
   }
 
   .icones i {
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .icones i:hover {
-    color: #4E54C8;
+    color: #4e54c8;
   }
 }
