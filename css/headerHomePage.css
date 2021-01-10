@@ -21,10 +21,10 @@ a {
 }
 
 .logoContainer span {
-  font-family: 'Kodchasan', sans-serif;
+  font-family: "Kodchasan", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.05em;
   font-size: 2.5em;
 }
 
@@ -33,30 +33,34 @@ a {
 }
 
 /* Menu mobile */
-.iconeMenu{
-  position: absolute;
+.botaoMenu {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
   align-items: center;
-  top: 120px;
-  right: 20px;
-}
-
-.iconeMenu:active, .iconeMenu::after {
-  color: #1d238b;
-}
-
-.iconeMenu span {
+  border: 3px solid white;
+  border-radius: 5px;
+  background: transparent;
+  width: 110px;
+  height: 35px;
+  padding: .5rem 1rem;
+  font-family: 'Montserrat';
   text-transform: uppercase;
+  color: #f5f5f5;
   font-weight: bold;
-  letter-spacing: .1em;
-  margin-right: .7em;
+  letter-spacing: .05em;
+  font-size: 1.15rem;
+}
+
+.botaoMenu:active {
+  background: #1d238b;
 }
 
 .itensMenu {
   z-index: 10;
   visibility: hidden;
   position: absolute;
-  top: 150px;
+  top: 170px;
   left: 50%;
   transform: translate(-50%);
   background: #4e54c8f1;
@@ -64,7 +68,7 @@ a {
   height: 275px;
   border-radius: 10px;
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 45px;
   display: flex;
   flex-direction: column;
@@ -72,7 +76,7 @@ a {
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.05em;
   color: #f5f5f5;
 }
 
@@ -93,23 +97,27 @@ a {
 }
 
 .botaoAcessar {
-  border: 3px solid #f5f5f5;
+  font-size: 20px;
+  background: #48BFE3;
   padding: 5px 18px;
   border-radius: 5px;
 }
 
-.menuVisivel {
-  visibility: initial;
-  animation: showMenu .7s;
+.cadastrar {
+  text-decoration: underline;
+  padding: 1rem ;
 }
 
+.menuVisivel {
+  visibility: initial;
+  animation: showMenu 0.7s;
+}
 
 @media (min-width: 940px) {
   header {
     width: 100%;
-    height: 200px;
     margin: 0 auto;
-    padding: 1.8em 0;
+    padding: 3.5rem 0;
     box-sizing: border-box;
   }
 
@@ -127,56 +135,62 @@ a {
   }
 
   .logoContainer img {
-    width: 100px;
+    width: 65px;
   }
 
   .logoContainer span {
-    font-size: clamp(35px, 3.5em, 3.7em);
+    font-size: 3rem;
   }
 
-  .iconeMenu {
-    display: none;
-  }
-
-  .itensMenu {
-    visibility: initial;
-    background: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    position: initial;
-    transform: initial;
-    align-items: center;
-    width: initial;
-    line-height: initial;
-    font-size: clamp(16px, .95vw, 1.1vw);
-    height: initial;
-  }
-
-  .itensMenu li {
-    margin: 0 .5em;
-  }
-
-  .itensMenu li a {
+  .botaoMenu {
+    width: 160px;
+    height: 40px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    outline: none;
     transition: .3s;
   }
 
+  .botaoMenu:hover {
+    background: #1d238b;
+    border: 3px solid #1d238b;
+  }
+
+  .itensMenu {
+    display: flex;
+    width: 300px;
+    height: 220px;
+    top: 105px;
+    left: initial;
+    right: 14.9%;
+    transform: initial;
+  }
+
   .itensMenu li a:hover {
-    color: #1d238b;
-    border-bottom: 1px solid #1d238b;
+    color: #48BFE3;
   }
 
   .itensMenu li:last-child {
     margin-top: 0;
   }
 
-  .itensMenu .botaoAcessar{
-    margin-left: 1em;
-}
-
   .itensMenu .botaoAcessar:hover {
     color: #f5f5f5;
     background: #1d238b;
-    border: 3px solid transparent;
+  }
+  
+  .menuVisivel {
+    animation: showMenuDesktop .3s;
+  }
+
+  @keyframes showMenuDesktop {
+    from {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

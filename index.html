@@ -22,21 +22,16 @@
             <div class="headerContainer">
 
                 <div class="logoContainer">
-                    <img src="images/logo.svg" alt="Logo da Conatus">
+                    <img src="images/logo.svg" alt="Logo da Conatus" title="Logo da Conatus">
                     <span>Conatus</span>
                 </div>
 
                 <nav class="navBar">
-                    <div class="iconeMenu" onclick="exibeMenu()">
-                        <span>Menu</span>
-                        <img src="images/menu.svg" alt="Ícone para acessar o menu">
-                    </div>
+                    <button class="botaoMenu" title="Clique para acessar ou se cadastrar">Acessar</button>
 
                     <ul class="itensMenu ">
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="views/acesso.html" class="botaoAcessar">Acessar</a></li>
+                        <li><a href="/views/login.html" class="botaoAcessar" title="Clique aqui caso ja tenha cadastro">Entrar</a></li>
+                        <li><a href="/views/cadastro.html" class="cadastrar" title="Cadastre-se já!">Não tenho conta!</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,9 +41,9 @@
         <main class="mainHomePage">
             <h2 class="slogan">Uma carreira de<br> sucesso<br> começa<br> aqui</h2>
 
-            <img class="arteHomePageDesktop" src="images/arte_homepage.svg" alt="">
+            <img class="arteHomePageDesktop" src="images/arte_homepage.svg" alt="ilustração de dois jovens abraçando o planeta terra" title="Abrace o mundo você também! =D">
 
-            <a href="#apresentacao" class="botaoEntrar bt">Conheça</a>
+            <a href="#apresentacao" class="botaoEntrar bt" title="Clique aqui e conheça a Conatus!">Conheça</a>
         </main>
     </div>
 
@@ -96,10 +91,10 @@
         <div class="footerContainer">
             <a href="#homePage"><img src="images/logo.svg" alt="logomarca da Conatus" class="logoFooter"></a>
 
-            <p>Projeto Conatus &reg; 2020</p>
+            <p>Projeto Conatus &reg; 2021</p>
 
-            <div class="redesSociais">
-                <h4>Redes sociais</h4>
+            <div class="linksContato">
+                <h4>Contato</h4>
                 <div class="icones">
                     <li><a href="mailto:projeto.conatus@gmail.com"><i class="far fa-envelope"></i></a></li>
                     <li><a target="_blank" href="https://github.com/projeto-conatus"><i class="fab fa-github"></i></a></li>
