@@ -78,44 +78,52 @@ h3 {
 footer {
   display: flex;
   margin: 4em auto 0;
+  background: linear-gradient(249.52deg, #3ac1f0 0%, #4e54c8 100%);
 }
 
 footer .footerContainer {
-  background: linear-gradient(249.52deg, #3ac1f0 0%, #4e54c8 100%);
-  height: 80px;
+  
+  height: 270px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  padding: 0 0.5em;
   box-sizing: border-box;
 }
 
 footer .logoFooter {
-  width: 55px;
+  margin-top: 1rem;
+  width: 35px;
+}
+
+.footerContainer .tituloFooter {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 footer p {
   text-align: center;
-  /* justify-self: center; */
-  font-size: 12px;
+  font-size: .86rem;
+  letter-spacing: .04rem;
 }
 
 footer .linksContato {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 80px;
 }
 
 .linksContato h4 {
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
   height: 15px;
-  width: 95px;
+  width: 125px;
   text-align: center;
+  font-size: .86rem;
 }
 
 .linksContato .icones {
@@ -127,6 +135,12 @@ footer .linksContato {
 
 .linksContato .icones i {
   padding: 0.2em;
+}
+
+.icones span {
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (min-width: 940px) {
@@ -205,17 +219,52 @@ footer .linksContato {
   }
 
   footer .footerContainer {
-    height: 120px;
-    padding: 0 17em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        " logo  titulo redes"
+                        "email stitulo icones";
+    width: 70%;
+    padding: 0;
   }
 
   footer .logoFooter {
-    width: 90px;
+    width: 60px;
+    grid-area: logo;
+  }
+  
+  .tituloFooter {
+    font-size: 1.15rem;
+    grid-area: titulo;
+  }
+
+  .email {
+    grid-area: email;
+    text-align: left;
+  }
+
+  .subtituloFooter {
+    grid-area: stitulo;
+  }
+
+  .redes {
+    grid-area: redes;
+    text-align: right;
+    font-size: 1.15rem;
+    text-transform: uppercase;
   }
 
   footer p {
     font-size: 1.2em;
     width: initial;
+  }
+
+  footer .linksContato {
+    justify-self: right;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 140px;
   }
 
   .linksContato h4 {
@@ -224,6 +273,7 @@ footer .linksContato {
 
   .linksContato .icones {
     font-size: 1.3em;
+    grid-area: icones;
   }
 
   .icones i {

@@ -84,11 +84,10 @@ body {
     border: 3px solid transparent;
   }
 
-  .linksContato {
+  /* .linksContato {
     display: flex;
-    list-style: none;
-    font-size: 2em;
-  }
+
+  } */
 }
 
 @media (min-width: 1280px) {
