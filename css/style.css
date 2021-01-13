@@ -41,7 +41,7 @@ body {
 
 @media (min-width: 940px) {
   .mainHomePage {
-    width: 70%;
+    width: 65%;
     height: 45vh;
     padding-left: 0.1em;
     margin: 7em auto 0;

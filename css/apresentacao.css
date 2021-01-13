@@ -61,7 +61,7 @@ h3 {
 }
 
 .botaoSaibaMais {
-  width: 70%;
+  width: 220px;
   margin: 1em auto 0;
   display: flex;
   justify-content: center;
@@ -148,7 +148,7 @@ footer h4 {
 
 @media (min-width: 940px) {
   .apresentacao {
-    width: 70%;
+    width: 65%;
     flex-wrap: wrap;
     margin: 3em auto;
   }
@@ -223,14 +223,16 @@ footer h4 {
 
   footer .footerContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 40% 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
                         " logo  titulo redes"
                         "email stitulo icones";
-    width: 70%;
-    height: 200px;
-    padding: 0;
+    width: 65%;
+    max-height: 200px;
+    margin-top: 2rem;
+    padding: 0 0 1rem 0;
+    box-sizing: border-box;
   }
 
   footer .logoFooter {
@@ -283,6 +285,16 @@ footer h4 {
     grid-area: icones;
     flex-direction: column;
     width: 140px;
+    align-items: flex-end;
+  }
+
+  .linksContato .icones a {
+    padding: .2rem .1rem 0;
+    width: 110px;
+    height: 35px;
+    box-sizing: border-box;
+    transition: .3s;
+    border-radius: 5px;
   }
 
   .linksContato .icones i {
@@ -297,8 +309,8 @@ footer h4 {
     letter-spacing: .05rem;
   }
 
-  .icones i:hover {
-    color: #4e54c8;
+  .icones a:hover {
+    background: #4e54c8;
   }
 
   .voltarAoTopo {

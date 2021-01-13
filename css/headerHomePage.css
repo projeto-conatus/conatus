@@ -135,15 +135,19 @@ a {
     margin: 0 auto;
     padding: 3.5rem 0;
     box-sizing: border-box;
+    
   }
 
   header p {
-    margin: 0 0 0 -5%;
+    margin: 0 ;
+    position: absolute;
+    right: 12rem;
   }
 
   .headerContainer {
+    position: relative;
     display: flex;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +159,7 @@ a {
   }
 
   .logoContainer img {
-    width: 65px;
+    width: 60px;
   }
 
   .logoContainer span {
@@ -181,9 +185,9 @@ a {
     display: flex;
     width: 300px;
     height: 220px;
-    top: 105px;
+    top: 60px;
     left: initial;
-    right: 14.9%;
+    right: 0;
     transform: initial;
   }
 
