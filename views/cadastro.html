@@ -60,18 +60,18 @@
                         </div>
                     </div>
 
-                    <div class="form-group col-md-7">
+                    <div class="form-group col-md-6">
                         <label for="validationCustom03">CPF</label>
-                        <input type="text" class="form-control" id="validationCustom03" name="cpf" placeholder="Digite seu CPF" required>
+                        <input type="number" class="form-control" id="validationCustom03" name="cpf" placeholder="Digite seu CPF" required min="1111111111"
+                        oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="11">
                         <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
+                            <p class="pCPF" style="color: white;">Digite 11 números<p>
                         </div>
                     </div>
 
-                    <div class="form-group col-md-5">
+                    <div class="form-group col-md-6">
                         <label for="validationCustom04">Data de Nascimento</label>
-                        <input type="text" class="form-control" id="validationCustom04" name="dataNascimento" placeholder="Digite sua data de nascimento" required>
+                        <input type="date" class="form-control" id="validationCustom04" name="dataNascimento" placeholder="Digite sua data de nascimento" required>
                         <div class="invalid-feedback">
                             <p style="color: white;">Favor preencher este campo
                                 <p>
@@ -80,75 +80,6 @@
                 </div>
 
                 <hr>
-
-                <!-- 
-            <div class="form-row">
-            <div class="form-group col-md-9">
-              <label for="validationCustom05">Endereço</label>
-              <input type="text" class="form-control" id="validationCustom05" name="endereco" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="validationCustom06">Numero</label>
-              <input type="text" class="form-control" id="validationCustom06" name="numeroEndereco" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-7">
-              <label for="validationCustom07">Complemento</label>
-              <input type="text" class="form-control" id="validationCustom07" name="complementoEndereco" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-5">
-              <label for="validationCustom08">Bairro</label>
-              <input type="text" class="form-control" id="validationCustom08" name="bairro" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-6">
-              <label for="validationCustom09">Cidade</label>
-              <input type="text" class="form-control" id="validationCustom09" name="cidade" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-2">
-              <label for="validationCustom10">UF</label>
-              <input type="text" class="form-control" id="validationCustom10" name="uf" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-
-            <div class="form-group col-md-4">
-              <label for="validationCustom11">CEP</label>
-              <input type="text" class="form-control" id="validationCustom11" name="cep" placeholder="" required>
-              <div class="invalid-feedback">
-                <p style="color: white;">Favor preencher este campo
-                <p>
-              </div>
-            </div>
-          </div>
-
-          <hr>
--->
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -164,65 +95,25 @@
                         <label for="validationCustom13">Tipo de Escola</label>
                         <input type="text" class="form-control" id="validationCustom13" name="tipoEscola" placeholder="" required>
                         <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
+                            <p style="color: white;">Favor preencher este campo<p>
                         </div>
                     </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="validationCustom14">Raça:</label>
-                        <input type="text" class="form-control" id="validationCustom14" name="raca" placeholder="" required>
-                        <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="validationCustom15">Gênero</label>
-                        <input type="text" class="form-control" id="validationCustom15" name="genero" placeholder="" required>
-                        <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="validationCustom16">Deficiente fisico?</label>
-                        <input type="text" class="form-control" id="validationCustom16" name="deficiencia" placeholder="Sim / Não" required>
-                        <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="validationCustom17">Tipo de Deficiência:</label>
-                        <input type="text" class="form-control" id="validationCustom17" name="tipoDeficiencia" placeholder="" required>
-                        <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
-                        </div>
-                    </div>
-                </div>
 
                 <hr>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="validationCustom18">Email</label>
-                        <input type="text" class="form-control" id="validationCustom18" name="email" placeholder="email@exemplo.com" required>
+                        <input type="email" class="form-control" id="validationCustom18" name="email" placeholder="email@exemplo.com" required>
                         <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
+                            <p style="color: white;">Digite um e-mail válido<p>
                         </div>
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="validationCustom19">Senha</label>
-                        <input type="password" class="form-control" id="validationCustom19" name="senha" placeholder="Senha" required>
+                        <input type="password" class="form-control" id="validationCustom19" name="senha" placeholder="Senha" required minlength="6">
                         <div class="invalid-feedback">
-                            <p style="color: white;">Favor preencher este campo
-                                <p>
+                            <p style="color: white;">Digite pelo menos 6 digitos<p>
                         </div>
                     </div>
                 </div>
@@ -253,8 +144,10 @@
                 });
             }, false);
         })();
+        
     </script>
     <!--ScriptJsBootstrap-->
+
 
 </body>
 
