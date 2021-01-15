@@ -81,6 +81,16 @@ input {
   font-weight: bold;
 }
 
+.feedback_seg {
+    background-color: red ;
+    color:black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    padding: 0.5rem;
+    border-radius: 1.3em;
+}
+
 @media (min-width: 940px) {
   .tituloLogin {
     margin-top: 2.3em;
@@ -129,6 +139,16 @@ input {
 
   .botaoEntrar:hover {
     background: #4050b4;
+  }
+
+  .feedback_seg {
+    background-color: red ;
+    color:black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    padding: 0.5rem;
+    border-radius: 1.3em;
   }
 
 }
