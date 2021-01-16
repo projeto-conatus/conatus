@@ -7,6 +7,7 @@
     if(isset($_POST['logar']) ){
         $email = $_POST['email'];
         $senha = $_POST['senha'];
+        $senha = md5($senha);
 
         if(strlen($email) > 0 && strlen($senha) > 0){
             $select    = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' LIMIT 1;";
@@ -16,7 +17,7 @@
 
             if( $num_row == 1 ){
                 $_SESSION['idUsuario'] = $row['idUsuario'];
-                header("Location: ../views/feed.html");
+                header("Location: ../views/feed.php");
 
             } else {
                 echo ("<SCRIPT LANGUAGE='JavaScript'>

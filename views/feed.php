@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('../config/seguranca.php');
+$seguranca = seguranca();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

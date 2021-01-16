@@ -5,16 +5,12 @@ require_once 'conexaobd.php';
 
     $nome                 = $_POST["nome"];
     $sobrenome            = $_POST["sobrenome"];
-    $cpf                  = $_POST["cpf"];
+    $cpf                  = md5($_POST["cpf"]);
     $dataNascimento       = $_POST["dataNascimento"];
     $escolaridade         = $_POST["escolaridade"];
     $tipoEscola           = $_POST["tipoEscola"];
-    $raca                 = $_POST["raca"];
-    $genero               = $_POST["genero"];
-    $deficiencia          = $_POST["deficiencia"];
-    $tipo_Deficiencia     = $_POST["tipoDeficiencia"];
     $email                = $_POST["email"];
-    $senha                = $_POST["senha"];
+    $senha                = md5($_POST["senha"]);
    
 
 
@@ -27,10 +23,6 @@ if(isset($_POST['cadastrar'])) {
     dataNascimento,
     escolaridade,
     tipoEscola,
-    raca,
-    genero,
-    deficiencia,
-    tipoDeficiencia,
     email,
     senha)
        Values  ('$nome',
@@ -39,10 +31,6 @@ if(isset($_POST['cadastrar'])) {
     '$dataNascimento',
     '$escolaridade', 
     '$tipoEscola', 
-    '$raca', 
-    '$genero',
-    '$deficiencia',
-    '$tipo_Deficiencia',
     '$email', 
     '$senha');";
 
@@ -75,7 +63,7 @@ if(isset($_POST['cadastrar'])) {
 
     if($result){
        echo ("<SCRIPT LANGUAGE='JavaScript'>
-                window.location.href='../views/login.html';
+                window.location.href='../views/login.php';
                 </SCRIPT>");
         
         mysqli_close($conn);
