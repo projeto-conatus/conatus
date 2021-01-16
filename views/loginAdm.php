@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/headerOutrasPaginas.css">
     <link rel="stylesheet" href="../css/estilologin.css" />
 
-    <title>Login Colaboradores Conatus</title>
+    <title>Login Colaboradores | Conatus</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <h4 class="tituloLogin">Login
+        <h4 class="tituloLogin">Login 
     <?php 
     if (isset($_SESSION['loginErro'])) {
     ?>
@@ -51,10 +51,9 @@
     </h4>
 
         <div class="formulario">
-            <form action="../config/validaLogin.php" method="POST">
-                <label for="email">E-mail:</label>
-                <input required type="text " id="email" placeholder="Digite seu e-mail" name="email"
-                    title="Digite seu e-mail" />
+            <form action="../config/validaLoginAdm.php" method="POST">
+                <label for="nome">Nome do usuário:</label>
+                <input required type="text" id="nome" name="nome" title="Digite o nome de usuario" />
                 <label for="senha">Senha:</label>
                 <input required type="password" id="senha" placeholder="Digite sua senha" name="senha"
                     title="Digite sua senha" />
@@ -63,7 +62,7 @@
                 <a class="esqueceuSenha" href="#" title="Clique aqui caso tenha esquecido sua senha">Esqueceu sua
                     senha?</a>
             </form>
-            <img src="../images/arte_login.svg" alt="Logo do menino" title="Arte ilustrativa com dois jovens" />
+            <img src="../images/" alt="" title="" />
         </div>
     </main>
 

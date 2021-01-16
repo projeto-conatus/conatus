@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/headerOutrasPaginas.css">
+    <link rel="stylesheet" href="../css/estilologin.css" />
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -34,12 +36,8 @@
     </header>
     <div class="row">
         <div class="container">
-            <h1>Área de administração</h1>
-            <br>
-            <br>
-            <br>
-            <h2>Cadastro de Artigos</h2>
-        <form action="actions/cadastraArtigo.php" method="post">
+        <h2>Cadastro de Artigos</h2>
+        <form action="../config/cadastraArtigos.php" method="POST">
                 <div class="">
                     <label for="titulo-artigo">Título</label>
                     <input type="text" name="titulo" id="titulo-artigo">
@@ -53,7 +51,6 @@
                 <div class="">
                     <label for="texto-artigo">Texto</label>
                     <textarea name="texto" id="texto-artigo"></textarea>
-                    
                 </div>
                 <div class="">
                     <label for="imagem">Nome da imagem</label>
@@ -61,7 +58,7 @@
                     
                 </div>
                 <button type="submit" name="btn_cadastrar" class="btn">Cadastrar</button>
-                <a href="listaArtigos.php" class="btn" role="button">Visualizar artigos cadastrados</a>
+                <a href="areaAdm.php" class="btn" role="button">Visualizar artigos cadastrados</a>
         </form>
         
         </div>

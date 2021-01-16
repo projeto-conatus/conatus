@@ -1,6 +1,6 @@
 <?php
 //CONEXAO
-include_once "./config/conexaobd.php";
+include_once "../config/conexaobd.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,11 @@ include_once "./config/conexaobd.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/headerOutrasPaginas.css">
+    <link rel="stylesheet" href="../css/estilologin.css" />
+    <link rel="stylesheet" href="../css/listaArtigos.css" />
+
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -37,15 +41,16 @@ include_once "./config/conexaobd.php";
             </nav>
         </div>
     </header>
-    <div class="row">
-        <div class="col-6">
-            <h2>Artigos cadastrados no banco de dados</h2>
-            <table>
+    <div class="container mt-5" >
+        <div class="table-responsive">
+            <h2>Área de Administração</h2>
+            <h3 class="tituloArtigos">Artigos cadastrados no banco de dados</h3>
+            <table class="table table-striped table-hover">
                 <thead>
-                    <tr>
-                        <th>Título do Artigo</th>
-                        <th>Subtítulo</th>
-                        <th>Data de criação</th>
+                    <tr scope ="row" class="text-center">
+                        <th scope="col">Título do Artigo</th>
+                        <th scope="col">Subtítulo</th>
+                        <th scope="col">Data de criação</th>
                     </tr>
                 </thead>
 
@@ -55,25 +60,25 @@ include_once "./config/conexaobd.php";
                 $resultado = mysqli_query($conn, $sql);
                 while($dados = mysqli_fetch_array($resultado)):
                 ?>
-                    <tr>
+                    <tr scope ="row">
                         <td><?php echo $dados['titulo']?></td>
                         <td><?php echo $dados['subtitulo']?></td>
                         <td><?php echo $dados['data']?></td>
-                        <td><button class="btn"><a name="btn_editar" href="editaArtigo.php?id=<?php echo $dados['id'];?>">Editar</a></button></td>
+                        <td><button class="btn btn-outline-warning"><a name="btn_editar" href="editaArtigo.php?id=<?php echo $dados['id'];?>">Editar</a></button></td>
                         <td>
-                            <form action="deletaArtigo.php" method="POST">
+                            <form action="../config/deletaArtigos.php" method="POST">
                             <input type="hidden" name="id" value="<?php echo $dados['id']?>">
-                                <button type="submit" name="btn_deletar" class="btn">
+                                <button type="submit" name="btn_deletar" class="btn btn-outline-danger">
                                     <a name="btn_deletar" >Apagar</a>
                                 </button>
                             </form>
-                            </td>
+                        </td>
                     </tr>
                 <?php endwhile; ?>
                 </tbody>
             </table>
             <br>
-            <a href="areaAdm.html" class="btn" role="button">Voltar para Área do Administrador</a>
+            <a href="cadastroArtigo.php" class="btn btn-primary" role="button">Cadastrar novos artigos</a>
         </div>
     </div>
 </body>
