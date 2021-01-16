@@ -22,7 +22,7 @@
             } else {
                 echo ("<SCRIPT LANGUAGE='JavaScript'>
                 window.alert('Usuário ou senha incorreto!')
-                window.location.href='../views/login.html';
+                window.location.href='../views/login.php';
                 </SCRIPT>");
             }
 
