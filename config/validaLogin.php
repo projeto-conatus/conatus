@@ -17,6 +17,7 @@
 
             if( $num_row == 1 ){
                 $_SESSION['idUsuario'] = $row['idUsuario'];
+                $_SESSION['nome'] = $row['nome'];
                 header("Location: ../views/feed.php");
 
             } else {

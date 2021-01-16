@@ -37,7 +37,7 @@ $seguranca = seguranca();
     <div class="pagina">
         <main class="feed">
             <div class="feedPersonalizado">
-                <h2>Seja bem vindX!</h2>
+                <h2><?php echo "Olá, ". $_SESSION['nome']."!"; ?></h2>
                 <p>Em breve, nossos serviços estarão disponíveis!</p>
             </div>
             <div class="linksContato">
