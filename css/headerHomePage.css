@@ -129,6 +129,16 @@ a {
   animation: showMenu 0.7s;
 }
 
+.feedback_cadSucesso {
+  color:green;
+  text-align: center;
+}
+
+.feedback_cadErro {
+  color: red;
+  text-align: center;
+}
+
 @media (min-width: 940px) {
   header {
     width: 100%;
@@ -206,6 +216,16 @@ a {
   
   .menuVisivel {
     animation: showMenuDesktop .3s;
+  }
+
+  .feedback_cadSucesso {
+    color:green;
+    text-align: center;
+  }
+  
+  .feedback_cadErro {
+    color: red;
+    text-align: center;
   }
 
   @keyframes showMenuDesktop {

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../config/seguranca.php');
-$seguranca = seguranca();
+$seguranca = seguranca_usuario();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
