@@ -62,7 +62,7 @@
                 <a class="esqueceuSenha" href="#" title="Clique aqui caso tenha esquecido sua senha">Esqueceu sua
                     senha?</a>
             </form>
-            <img src="../images/" alt="" title="" />
+            <img src="../images/arte_loginAdm.svg" alt="logo administrador" title="Arte de pessoas construindo um site" />
         </div>
     </main>
 
