@@ -16,10 +16,11 @@ if(isset($_POST['btn_cadastrar'])):
 
 
     if(mysqli_query($conn, $sql)):
-       /* $_SESSION['mensagem'] = "Cadastrado com Sucesso!";*/
-        header('Location: ../views/areaAdm.php');
+        $_SESSION['cad_sucesso'] = "Cadastrado com Sucesso!";
+        header('Location: ../views/cadastroArtigo.php');
     else:
-       /* $_SESSION['mensagem'] = "Erro ao Cadastrar!";*/
+        $_SESSION['cad_erro'] = "Erro ao Cadastrar!";
         header('Location: ../views/cadastroArtigo.php');
     endif;
+
 endif;

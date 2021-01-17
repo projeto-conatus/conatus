@@ -63,6 +63,8 @@ header {
   background: #4E54C8;
 }
 
+
+
 @media (min-width: 940px) {
   header {
     background: linear-gradient(249.52deg, #3AC1F0 0%, #4E54C8 100%);

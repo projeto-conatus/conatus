@@ -15,10 +15,10 @@ if(isset($_POST['btn_editar'])):
     $sql = "UPDATE artigo SET titulo = '$titulo', subtitulo = '$subtitulo', texto = '$texto', imagem = '$imagem' WHERE id = '$id'";
 
     if(mysqli_query($conn, $sql)):
-        /*$_SESSION['mensagem'] = "Atualizado com Sucesso!";*/
+        $_SESSION['up_sucesso'] = "Atualizado com Sucesso!";
         header('Location: ../views/areaAdm.php');
     else:
-        /*$_SESSION['mensagem'] = "Erro ao Atualizar!";*/
+        $_SESSION['up_erro'] = "Erro ao Atualizar!";
         header('Location: ../view/editaArtigo.php');
     endif;
 endif;

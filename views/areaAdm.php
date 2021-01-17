@@ -1,6 +1,9 @@
 <?php
 //CONEXAO
 include_once "../config/conexaobd.php";
+session_start();
+include('../config/seguranca.php');
+$seguranca = seguranca_adm();
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +50,7 @@ include_once "../config/conexaobd.php";
             <h3 class="tituloArtigos">Artigos cadastrados no banco de dados</h3>
             <table class="table table-striped table-hover">
                 <thead>
-                    <tr scope ="row" class="text-center">
+                    <tr scope ="row">
                         <th scope="col">Título do Artigo</th>
                         <th scope="col">Subtítulo</th>
                         <th scope="col">Data de criação</th>
@@ -83,9 +86,3 @@ include_once "../config/conexaobd.php";
     </div>
 </body>
 </html>
-
-
-<?php
-//Footer
-include_once "includes/footer.php";
-?>
