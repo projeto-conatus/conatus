@@ -1,4 +1,9 @@
-  <!DOCTYPE html>
+<?php
+session_start();
+include('../config/seguranca.php');
+$seguranca = seguranca_usuario();
+?>
+<!DOCTYPE html>
   <html lang="pt-br">
   <head>
       <meta charset="UTF-8">
@@ -21,10 +26,11 @@
                 <button class="botaoMenuFeed" title="Menu">Menu</button>
 
                 <div class="linksMenu">
+                    <h4 class='saudacao-usuario'><?php echo "Olá, ". $_SESSION['nome']."!"; ?></h4>
                     <a href="#"><i class="far fa-bell"></i></a>
                     <a class="botaoPerfil" href="#">Perfil</a>
-                    <a href="./feedInicio.html">Inicio</a>
-                    <a href="./feedTrilha.html">Cursos</a>
+                    <a href="./feedInicio.php">Inicio</a>
+                    <a href="./feedTrilha.php">Cursos</a>
                     <a href="#">Vagas</a>
                     <button class="botaoSair">Sair</button>
                 </div>
