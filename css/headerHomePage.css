@@ -96,8 +96,8 @@ a {
   color: #f5f5f5;
 }
 
-.itensMenu li:last-child {
-  margin-top: 1.4em;
+.itensMenu li {
+  margin-top: .5rem;
 }
 
 /* Animação de entrada do menu */
@@ -120,6 +120,7 @@ a {
 }
 
 .cadastrar {
+  margin-top: 1rem;
   text-decoration: underline;
   padding: 1rem ;
 }

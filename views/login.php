@@ -56,22 +56,17 @@
                 <input required type="text " id="email" placeholder="Digite seu e-mail" name="email"
                     title="Digite seu e-mail" />
                 <label for="senha">Senha:</label>
-<<<<<<< HEAD:views/login.html
                 <input required type="password" id="senha" placeholder="Digite sua senha" name="senha" title="Digite sua senha" />
                 <button  class="botaoEntrar" name="logar" type="submit" title="Clique após ter preenchido seus dados">Entrar</button>
                 <a class="esqueceuSenha" href="#" title="Clique aqui caso tenha esquecido sua senha" onclick="alert('Em breve estará disponível')">Esqueceu sua senha?</a>
-=======
-                <input required type="password" id="senha" placeholder="Digite sua senha" name="senha"
-                    title="Digite sua senha" />
-                <button class="botaoEntrar" name="logar" type="submit"
-                    title="Clique após ter preenchido seus dados">Entrar</button>
-                <a class="esqueceuSenha" href="#" title="Clique aqui caso tenha esquecido sua senha">Esqueceu sua
-                    senha?</a>
->>>>>>> 6c6281830465d9019b4e08e6653e60d25700b7bc:views/login.php
             </form>
             <img src="../images/arte_login.svg" alt="Logo do menino" title="Arte ilustrativa com dois jovens" />
         </div>
     </main>
+
+    <div>
+
+    </div>
 
     <script src="../scripts/script.js "></script>
 </body>
