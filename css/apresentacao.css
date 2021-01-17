@@ -146,6 +146,10 @@ footer h4 {
   text-transform: uppercase;
 }
 
+.voltarAoTopo {
+  display: none;
+}
+
 @media (min-width: 940px) {
   .apresentacao {
     width: 65%;

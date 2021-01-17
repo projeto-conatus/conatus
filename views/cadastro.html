@@ -70,8 +70,8 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="validationCustom04">Data de Nascimento</label>
-                        <input type="date" class="form-control" id="validationCustom04" name="dataNascimento" placeholder="Digite sua data de nascimento" required>
+                        <label for="validationCustom04">Data de Nasc.</label>
+                        <input type="date" class="form-control" id="validationCustom04" name="dataNascimento" title="Digite sua data de nascimento" required>
                         <div class="invalid-feedback">
                             <p style="color: white;">Favor preencher este campo
                                 <p>
@@ -98,8 +98,10 @@
                             <p style="color: white;">Favor preencher este campo<p>
                         </div>
                     </div>
+                </div>
 
                 <hr>
+
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="validationCustom18">Email</label>
@@ -120,9 +122,32 @@
 
                 <hr>
                 <button class="btn btn-primary btn-lg btn-block enviar" name="cadastrar" type="submit">Cadastrar</button>
+            </form>
         </div>
     </div>
-    </form>
+    
+
+    <div class="modalAviso">
+        <div class="modalConteudo">
+            <h1>Aviso</h1>
+            <p>Olá!<strong> Somos inicialmente, uma aplicação voltada para jovens que concluíram ou estão no ensino médio em escolas públicas da cidade do Rio de Janeiro</strong>. Nosso objetivo é ajudar esse jovem a se qualificar para o mercado de trabalho, oferecendo cursos, vagas e informação de qualidade. Se você se encaixa nesse perfil, não deixe de se cadastrar  e aproveitar todos os nossos serviços gratuitamente!</p>
+
+            <div class="botoesModal">
+                <a href="../index.html">Voltar</a>
+                <button class="fecharModal">Me encaixo no perfil</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const fecharModal = document.querySelector('.fecharModal');
+        const modal = document.querySelector('.modalAviso');
+
+        fecharModal.addEventListener('click', () => {
+            modal.classList.add('desativar');
+        })
+    </script>
 
     <!--ScriptJsBootstrap-->
     <script>
@@ -147,7 +172,6 @@
         
     </script>
     <!--ScriptJsBootstrap-->
-
 
 </body>
 
