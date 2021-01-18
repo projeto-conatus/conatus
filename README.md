@@ -16,7 +16,7 @@
 
 - [x] Login de usuário
 - [x] Cadastro de cliente
-- [ ] Página principal com o feed de notícias
+- [x] Página principal com o feed de artigos e trilhas
 - [ ] Link direcionado para os serviços
 
 ### Demonstração da aplicação
