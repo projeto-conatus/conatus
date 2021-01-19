@@ -201,10 +201,6 @@ a {
     transform: initial;
   }
 
-  .itensMenu li a {
-    transition: .3s;
-  }
-
   .itensMenu li a:hover {
     color: #48BFE3;
   }
