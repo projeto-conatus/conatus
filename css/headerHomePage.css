@@ -146,6 +146,7 @@ a {
     margin: 0 auto;
     padding: 3.5rem 0;
     box-sizing: border-box;
+    
   }
 
   header p {
@@ -199,10 +200,6 @@ a {
     left: initial;
     right: 0;
     transform: initial;
-  }
-
-  .itensMenu li a {
-    transition: .3s;
   }
 
   .itensMenu li a:hover {

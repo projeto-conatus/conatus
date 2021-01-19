@@ -163,7 +163,6 @@ footer h4 {
 
   .apresentacao h3 {
     font-size: 1.5em;
-    font-weight: normal;
   }
 
   .apresentacao h2 {
@@ -171,11 +170,10 @@ footer h4 {
   }
 
   .apresentacao p {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     text-indent: 1em;
-    font-size: 1.4em;
-    grid-area: texto;
+    font-size: 1.5em;
   }
 
   .oQueFazemos {
@@ -190,23 +188,28 @@ footer h4 {
   }
 
   .oQueFazemosTitulo {
-    margin-top: 2em;
+    margin-top: 5em;
     grid-area: titulo;
+  }
+
+  .oQueFazemosParagrafo {
+    width: 100%;
+    grid-area: texto;
+    margin: 0 0 0 14rem !important;
   }
 
   .arteDuvida {
     grid-area: img;
-    width: 18vw;
-    min-width: 300px;
+    width: 320px;
     margin: 0 0 2rem !important;
   }
 
   .arteEspecialistas {
-    width: 420px;
+    width: 720px;
   }
 
   .arteEscolha {
-    width: 420px;
+    width: 720px;
   }
 
   .botaoSaibaMais {
