@@ -18,11 +18,11 @@ $seguranca = seguranca_usuario();
 </head>
 
 <body>
-    
-    <?php 
-        include_once('vlibras.html');
-      ?>
-      
+
+    <?php
+    include_once('vlibras.html');
+    ?>
+
     <header>
         <div class="headerContainer">
             <div class="logoContainer">
@@ -49,32 +49,12 @@ $seguranca = seguranca_usuario();
     <h3 class="titulo">Inicio</h3>
 
     <main class="conteudoPrincipal">
-        <!-- <div class="gridEsquerdo"> -->
-        <section class="artigos">
-            <div class="capa">
-                <img src="../images/arte_homepage.svg" alt="">
-            </div>
-            <h1>Titulo</h1>
-            <h3>Subtitulo</h3>
-            <hr>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum culpa itaque dolorem facere eos amet nostrum
-                commodi delectus sunt. Delectus, officia tempora voluptates asperiores laborum alias sit ut at repudiandae.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorem facilis ea pariatur laudantium quia ullam cumque provident, corporis ut voluptatum beatae odit voluptas fugit dolor nulla voluptatibus sunt quasi?
-                Veniam vitae corporis, possimus officia rem quis cum tempore dignissimos, ea itaque quam minima hic facere omnis, unde perferendis explicabo est commodi. Repudiandae rerum delectus officiis corporis? Dolores, laudantium voluptatem.
-                Perspiciatis repellendus voluptate facere id, nulla, maxime esse consectetur earum possimus similique quo accusamus aperiam, neque natus ipsum rem! Consequuntur tempore harum accusamus eum temporibus quos consequatur impedit velit totam?
-                Molestiae dolorem nulla obcaecati ut sapiente voluptatum! Error odio provident tenetur voluptatum accusamus repellat molestias eius laborum, enim doloremque ipsum ab similique quod accusantium, dicta sequi unde iste nobis. Facilis?
-                Quis, aliquid alias. Deserunt voluptas assumenda harum quo voluptatum praesentium molestias eum commodi eius repellendus aliquam deleniti, esse corporis sunt in odio reiciendis ratione. Incidunt doloremque dolore architecto culpa ducimus!
-                Repellat eaque odit temporibus eos sed aut quis inventore voluptatem officia. Quaerat doloremque ea porro, perspiciatis minima quidem maiores deleniti ex error, esse repudiandae aspernatur nobis architecto animi soluta blanditiis!
-                Hic vero officiis corporis dignissimos doloribus, rerum iure iste ducimus incidunt quasi ullam consequuntur suscipit! Omnis, quo modi repellat recusandae odio neque, velit rem a amet, vel suscipit. Adipisci, deleniti.
-                Quaerat tenetur illo reprehenderit porro, non consequuntur sapiente, reiciendis repudiandae, consequatur nobis quas culpa quo expedita neque eaque cum debitis. Voluptatem nulla quibusdam, aperiam quasi iure quo excepturi amet quos.
-                Aut veritatis, doloremque deserunt beatae esse odio expedita provident dolore minus tempore dolores quod animi perferendis! Optio veniam vero eum quam blanditiis. Blanditiis rem magnam, laborum sint repellendus totam doloremque!
-                Ipsam assumenda nihil libero temporibus quam, esse non repellat eligendi commodi modi illum nisi illo excepturi cupiditate voluptates at ut tenetur et totam, quisquam, necessitatibus impedit tempora soluta dolores! Ab.
-            </p>
 
+        <section class="artigos">
+            <?php require_once("../config/selectArtigos.php"); ?>
         </section>
-        <!-- </div> -->
-        <!-- <div class="gridDireito"> -->
+
+
         <section class="listaArtigos">
             <h3>Lista de Artigos</h3>
             <ul>
@@ -100,7 +80,6 @@ $seguranca = seguranca_usuario();
                 Rem, corporis provident! Quae suscipit, iusto reiciendis voluptas culpa dignissimos quisquam fuga harum, sed dolore laudantium in! Velit itaque odio ea! Et dolore eaque itaque! Doloremque atque porro vitae optio.</p>
         </section>
 
-        <!-- </div>   -->
     </main>
 
     <script src="../scripts/scriptsFeed.js"></script>
