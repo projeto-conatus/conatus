@@ -46,17 +46,11 @@ $seguranca = seguranca_usuario();
 
     </header>
 
-    <h3 class="titulo">Início</h3>
+    <h3 class="titulo">Inicio</h3>
 
     <main class="conteudoPrincipal">
-    <!-- <div class="gridEsquerdo"> -->
-
+        <!-- <div class="gridEsquerdo"> -->
         <section class="artigos">
-            <?php require_once("../config/selectArtigos.php"); ?>
-        </section>
-
-        <!--
-            
             <div class="capa">
                 <img src="../images/arte_homepage.svg" alt="">
             </div>
@@ -78,10 +72,9 @@ $seguranca = seguranca_usuario();
                 Ipsam assumenda nihil libero temporibus quam, esse non repellat eligendi commodi modi illum nisi illo excepturi cupiditate voluptates at ut tenetur et totam, quisquam, necessitatibus impedit tempora soluta dolores! Ab.
             </p>
 
-         -->
-
-         </div> 
-         <!-- <div class="gridDireito">  -->
+        </section>
+        <!-- </div> -->
+        <!-- <div class="gridDireito"> -->
         <section class="listaArtigos">
             <h3>Lista de Artigos</h3>
             <ul>
