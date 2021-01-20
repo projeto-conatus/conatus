@@ -7,12 +7,13 @@ require_once 'conexaobd.php';
 if(isset($_POST['btn_editar'])):
     $titulo      = mysqli_escape_string($conn, $_POST['titulo']);
     $subtitulo = mysqli_escape_string($conn, $_POST['subtitulo']);
+    $autor = mysqli_escape_string($conn, $_POST['autor']);
     $texto     = mysqli_escape_string($conn, $_POST['texto']);
     $imagem     = mysqli_escape_string($conn, $_POST['imagem']);
     $id     = mysqli_escape_string($conn, $_POST['id']);
 
 
-    $sql = "UPDATE artigo SET titulo = '$titulo', subtitulo = '$subtitulo', texto = '$texto', imagem = '$imagem' WHERE id = '$id'";
+    $sql = "UPDATE artigo SET titulo = '$titulo', subtitulo = '$subtitulo', autor = '$autor', texto = '$texto', imagem = '$imagem' WHERE id = '$id'";
 
     if(mysqli_query($conn, $sql)):
         $_SESSION['up_sucesso'] = "Atualizado com Sucesso!";

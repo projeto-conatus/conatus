@@ -75,6 +75,9 @@ endif;
                         <label for="subtitulo">Subtitulo</label>
                         <input class="form-control" type="text" name="subtitulo" id="subtitulo" value="<?php echo $dados['subtitulo'];?>">
 
+                        <label for="id-colaborador">ID do colaborador</label>
+                        <input class="form-control" type="text" name="autor" id="id-colaborador" value="<?php echo $dados['autor'];?>">
+
                         <label for="exampleFormControlTextarea1">Texto</label>
                         <textarea class="form-control" name="texto" id="texto-artigo"> <?php echo $dados['texto'];?></textarea>
 

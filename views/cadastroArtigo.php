@@ -63,6 +63,9 @@ $seguranca = seguranca_adm();
                         <label for="subtitulo-artigo">Subtítulo</label>
                         <input class="form-control" type="text" name="subtitulo" id="subtitulo-artigo">
 
+                        <label for="id-autor">ID do autor</label>
+                        <input class="form-control" type="text" name="autor" id="id-autor">
+
                         <label for="exampleFormControlTextarea1">Texto</label>
                         <textarea class="form-control" name="texto" id="texto-artigo"></textarea>
                     
