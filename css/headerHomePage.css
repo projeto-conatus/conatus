@@ -158,6 +158,7 @@ a {
     position: relative;
     display: flex;
     width: 65%;
+    min-width: 690px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -179,7 +180,6 @@ a {
   .botaoMenu {
     width: 160px;
     height: 40px;
-    line-height: 40px;
     font-size: 1.4rem;
     cursor: pointer;
     outline: none;

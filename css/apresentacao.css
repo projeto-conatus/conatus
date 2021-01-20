@@ -145,6 +145,7 @@ footer h4 {
   font-size: .6rem;
   letter-spacing: .04rem;
   text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
 }
 
 .voltarAoTopo {
@@ -307,7 +308,7 @@ footer h4 {
 
   .icones span {
     margin-right: .4rem;
-    font-size: .80rem;
+    font-size: .75rem;
     letter-spacing: .05rem;
   }
 

@@ -37,10 +37,15 @@ body {
   width: 85%;
 }
 
+.curso ol p:last-child {
+  margin-bottom: 1.5rem;
+}
+
 .curso ol li {
   font-size: 1.2rem;
   margin: 0.7rem 0 0.7rem 1rem;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 .curso p {
@@ -48,6 +53,12 @@ body {
   margin: 0.5rem 0;
   text-align: justify;
   line-height: 1.1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.curso .autor {
+  font-size: .7rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 940px) {
@@ -56,14 +67,15 @@ body {
     text-align: center;
     font-size: 1.5rem;
     width: initial;
-    margin: 3rem 0 0 12%;
+    margin: 3rem 0 0 8%;
   }
 
   .curso {
     width: 70%;
-    margin-left: 21%;
+    /* max-width: 900px; */
+    margin-left: 19%;
     min-height: 80vh;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .curso img {
@@ -73,10 +85,13 @@ body {
   }
 
   .curso ol {
+    max-width: 900px;
     margin: 1rem 0 0 4rem;
   }
 
   .curso ol li {
     font-size: 1.5rem;
   }
+
+
 }

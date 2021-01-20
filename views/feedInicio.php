@@ -36,17 +36,17 @@ $seguranca = seguranca_usuario();
                     <h4 class='saudacao-usuario'><?php echo "Olá, " . $_SESSION['nome'] . "!"; ?></h4>
                     <a href="#"><i class="far fa-bell"></i></a>
                     <a class="botaoPerfil" href="#">Perfil</a>
-                    <a href="./feedInicio.php">Inicio</a>
+                    <a href="./feedInicio.php">Início</a>
                     <a href="./feedCursos.php">Cursos</a>
                     <a href="#">Vagas</a>
-                    <button class="botaoSair">Sair</button>
+                    <button class="botaoSair"><a href="../index.html">Sair</a></button>
                 </div>
             </nav>
         </div>
 
     </header>
 
-    <h3 class="titulo">Inicio</h3>
+    <h3 class="titulo">Início</h3>
 
     <main class="conteudoPrincipal">
 
@@ -64,8 +64,15 @@ $seguranca = seguranca_usuario();
 
         <section class="publi">
             <h3>Publicidade</h3>
-            <img src="../images/publi/instagram.png" alt="Nos siga no Instagram" title="Nos siga no Instagram">
-            <img src="../images/publi/recode.png" alt="Conheça a Recode" title="Conheça a Recode">
+
+            <a href="https://www.instagram.com/conatusprojeto/" target="_blank">
+                <img src="../images/publi/instagram.png" alt="Nos siga no Instagram" title="Nos siga no Instagram">
+            </a>
+
+            <a href="https://recode.org.br/" target="_blank">
+                <img src="../images/publi/recode.png" alt="Conheça a Recode" title="Conheça a Recode">
+            </a>
+
         </section>
 
         <section class="novidades">
