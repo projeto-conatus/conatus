@@ -57,6 +57,7 @@ $seguranca = seguranca_adm();
                     <tr scope="row">
                         <th scope="col">Título do Artigo</th>
                         <th scope="col">Subtítulo</th>
+                        <th scope="col">Id Autor</th>
                         <th scope="col">Data de criação</th>
                     </tr>
                 </thead>
