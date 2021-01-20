@@ -6,7 +6,7 @@ require_once 'conexaobd.php';
     $sql = "SELECT a.titulo, a.subtitulo, a.texto, a.imagem, c.nome, a.imagem 
             FROM autores AS c INNER JOIN artigo AS a ON c.idAutor = a.autor;";
     $resultado = mysqli_query($conn, $sql);
-    while($dados = mysqli_fetch_array($resultado)):
+    while($dados = mysqli_fetch_array($resultado))
         ?>
         <article class="artigo">
 
@@ -28,4 +28,4 @@ require_once 'conexaobd.php';
 
         </article>
 
-    <?php endwhile; ?>
+

@@ -1,3 +1,6 @@
+<?php
+    include_once ("../config/conexaobd.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -95,7 +98,17 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="validationCustom12">Escolaridade</label>
-                        <input type="text" class="form-control" id="validationCustom12" name="escolaridade" placeholder="Digite seu grau de escolaridade" required>
+                        <select class="form-control" id="validationCustom12" name="escolaridade">
+                            <option>Selecione</option>
+                            <?php
+                                $resultado_escolaridade = "SELECT * FROM nivelescolaridade";
+                                $query = mysqli_query($conn, $resultado_escolaridade);
+                                while($row_escolaridade = mysqli_fetch_array($query)){ ?>
+                                    <option value="<?php echo  $row_escolaridade['idEscolaridade']; ?>" ><?php echo $row_escolaridade['escolaridade'];?>
+                                </option><?php
+                                }
+                            ?>
+                        </select>
                         <div class="invalid-feedback">
                             <p style="color: white;">Favor preencher este campo
                                 <p>
@@ -104,7 +117,17 @@
 
                     <div class="form-group col-md-6">
                         <label for="validationCustom13">Tipo de Escola</label>
-                        <input type="text" class="form-control" id="validationCustom13" name="tipoEscola" placeholder="Pública ou privada" required>
+                        <select class="form-control" id="validationCustom13" name="tipoEscola">
+                            <option>Selecione</option>
+                            <?php
+                                $resultado_escola = "SELECT * FROM tipoescola";
+                                $query = mysqli_query($conn, $resultado_escola);
+                                while($row_escola = mysqli_fetch_array($query)){ ?>
+                                    <option value="<?php echo  $row_escola['idEscola']; ?>" ><?php echo $row_escola['escola'];?>
+                                </option><?php
+                                }
+                            ?>
+                        </select>
                         <div class="invalid-feedback">
                             <p style="color: white;">Favor preencher este campo<p>
                         </div>
