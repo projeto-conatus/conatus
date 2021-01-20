@@ -6,11 +6,10 @@
 
 .navBar {
   display: flex;
-  justify-content: flex-end;
-  margin: 1.5rem 7.5% 0.5rem 0;
   position: absolute;
-  right: 0;
-  top: 55px;
+  right: 5%;
+  top: 60px;
+  z-index: 100;
 }
 
 .botaoMenuFeed {
@@ -55,18 +54,23 @@
   animation: showMenu 0.3s;
 }
 
+.linksMenu h4 {
+  color: #e5e5e5;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+}
+
 .linksMenu i {
   font-size: 1.8rem;
 }
 
-.linksMenu a,
-h4 {
+.linksMenu a {
   color: #e5e5e5;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "nunito", sans-serif;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
 }
 

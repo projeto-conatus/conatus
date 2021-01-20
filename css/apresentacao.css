@@ -142,7 +142,8 @@ footer h4 {
 
 .icones span {
   margin-top: .5rem;
-  font-size: .8rem;
+  font-size: .6rem;
+  letter-spacing: .04rem;
   text-transform: uppercase;
 }
 
@@ -282,7 +283,7 @@ footer h4 {
   }
 
   .linksContato .icones {
-    font-size: 1.3em;
+    font-size: 1.1em;
     grid-area: icones;
     flex-direction: column;
     width: 140px;
@@ -301,12 +302,12 @@ footer h4 {
   .linksContato .icones i {
     transition: 0.5s;
     flex-direction: row-reverse;
-    margin-bottom: .7rem;
+    margin-bottom: .8rem;
   }
 
   .icones span {
-    margin-right: .5rem;
-    font-size: .85rem;
+    margin-right: .4rem;
+    font-size: .80rem;
     letter-spacing: .05rem;
   }
 
@@ -337,6 +338,10 @@ footer h4 {
     
   }
 
+  .voltarAoTopo i {
+    margin-top: .3rem;
+  }
+
   .voltarAoTopo.ativo {
     display: flex;
     animation: aparecer 1s;
@@ -350,7 +355,7 @@ footer h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: .9rem;
-    margin-top: .5rem;
+    margin-top: .2rem;
   }
 
   .voltarAoTopo:hover {

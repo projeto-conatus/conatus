@@ -9,11 +9,11 @@ require_once 'conexaobd.php';
         <article class="artigo">
 
             <div class="capa">
-                <!-- <?php 
-                    //$diretorio = "../images/";
-                    //$imagem = $dados['imagem'];
+                <?php 
+                    $diretorio = "../images/";
+                    $imagem = $dados['imagem'];
                 ?>
-                <img src= <?php echo $diretorio . $imagem?>; alt=""> -->
+                <img src= <?php echo $diretorio . $imagem?> alt="">
             </div>
             <h1><?php echo $dados['titulo']; ?></h1>
             <h3><?php echo $dados['subtitulo'];?></h3>
