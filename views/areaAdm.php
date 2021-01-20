@@ -28,9 +28,9 @@ $seguranca = seguranca_adm();
 
 <body>
 
-    <?php 
-        include_once('vlibras.html');
-      ?>
+    <?php
+    include_once('vlibras.html');
+    ?>
 
     <header>
         <div class="headerContainer">
@@ -48,13 +48,13 @@ $seguranca = seguranca_adm();
             </nav>
         </div>
     </header>
-    <div class="container mt-5" >
+    <div class="container mt-5">
         <div class="table-responsive">
             <h2>Área de Administração</h2>
             <h3 class="tituloArtigos">Artigos cadastrados no banco de dados</h3>
             <table class="table table-striped table-hover">
                 <thead>
-                    <tr scope ="row">
+                    <tr scope="row">
                         <th scope="col">Título do Artigo</th>
                         <th scope="col">Subtítulo</th>
                         <th scope="col">Data de criação</th>
@@ -62,26 +62,26 @@ $seguranca = seguranca_adm();
                 </thead>
 
                 <tbody>
-                <?php
-                $sql = "SELECT * FROM artigo";
-                $resultado = mysqli_query($conn, $sql);
-                while($dados = mysqli_fetch_array($resultado)):
-                ?>
-                    <tr scope ="row">
-                        <td><?php echo $dados['titulo']?></td>
-                        <td><?php echo $dados['subtitulo']?></td>
-                        <td><?php echo $dados['data']?></td>
-                        <td><button class="btn btn-outline-warning"><a name="btn_editar" href="editaArtigo.php?id=<?php echo $dados['id'];?>">Editar</a></button></td>
-                        <td>
-                            <form action="../config/deletaArtigos.php" method="POST">
-                            <input type="hidden" name="id" value="<?php echo $dados['id']?>">
-                                <button type="submit" name="btn_deletar" class="btn btn-outline-danger">
-                                    <a name="btn_deletar" >Apagar</a>
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                <?php endwhile; ?>
+                    <?php
+                    $sql = "SELECT * FROM artigo";
+                    $resultado = mysqli_query($conn, $sql);
+                    while ($dados = mysqli_fetch_array($resultado)) :
+                    ?>
+                        <tr scope="row">
+                            <td><?php echo $dados['titulo'] ?></td>
+                            <td><?php echo $dados['subtitulo'] ?></td>
+                            <td><?php echo $dados['data'] ?></td>
+                            <td><button class="btn btn-outline-warning"><a name="btn_editar" href="editaArtigo.php?id=<?php echo $dados['id']; ?>">Editar</a></button></td>
+                            <td>
+                                <form action="../config/deletaArtigos.php" method="POST">
+                                    <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
+                                    <button type="submit" name="btn_deletar" class="btn btn-outline-danger">
+                                        <a name="btn_deletar">Apagar</a>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
             <br>
@@ -89,4 +89,5 @@ $seguranca = seguranca_adm();
         </div>
     </div>
 </body>
+
 </html>

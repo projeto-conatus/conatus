@@ -116,8 +116,7 @@ section {
 .listaArtigos h3 {
   color: #3a3a3a;
   font-weight: bold;
-  margin: 1rem auto;
-  /* font-family: 'nunito', sans-serif; */
+  margin: .5rem auto;
 }
 
 .publi {
@@ -126,10 +125,14 @@ section {
   align-items: center;
 }
 
+.publi a {
+  text-align: center;
+}
+
 .publi img {
   width: 70%;
   max-width: 320px;
-  margin-bottom: 1.2rem;
+  margin-bottom: .5rem;
 }
 
 .listaArtigos {
@@ -141,11 +144,12 @@ section {
   margin: .5rem 0;
 }
 
-.listaArtigos ul li a {
+.listaArtigos a {
   text-decoration: none;
   color: #3a3a3a;
-  font-size: 1.1rem;
+  font-size: .9rem;
   letter-spacing: .02rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 section::-webkit-scrollbar {
@@ -182,11 +186,13 @@ section::-webkit-scrollbar-track {
       "artigos art"
       "artigos publi"
       "artigos novi";
-      grid-column-gap: 3rem;
-      grid-row-gap: .5rem;
+      grid-column-gap: 1rem;
+      grid-row-gap: .4rem;
     width: 75%;
+    max-width: 1420px;
+    min-width: 780px;
     margin-top: 0;
-    margin-left: 18%;
+    margin: 0 18%;
   }
 
   section {
@@ -226,6 +232,11 @@ section::-webkit-scrollbar-track {
     overflow: auto;
     height: 200px;
     grid-area: publi;
+  }
+  
+  .publi img {
+    width: 75%;
+    max-width: 200px;
   }
 
   .novidades {

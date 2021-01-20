@@ -38,10 +38,10 @@ $seguranca = seguranca_usuario();
                     <h4 class='saudacao-usuario'><?php echo "Olá, " .  $_SESSION['nome']; ?></h4>
                     <a href="#"><i class="far fa-bell"></i></a>
                     <a class="botaoPerfil" href="#">Perfil</a>
-                    <a href="./feedInicio.php">Inicio</a>
+                    <a href="./feedInicio.php">Início</a>
                     <a href="./feedCursos.php">Cursos</a>
                     <a href="#">Vagas</a>
-                    <button class="botaoSair">Sair</button>
+                    <button class="botaoSair"><a href="../index.html">Sair</a></button>
                 </div>
             </nav>
         </div>
