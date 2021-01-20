@@ -58,26 +58,19 @@ $seguranca = seguranca_usuario();
         <section class="listaArtigos">
             <h3>Lista de Artigos</h3>
             <ul>
-                <li><a href="#">Artigo 4 | data </a></li>
-                <li><a href="#">Artigo 3 | data </a></li>
-                <li><a href="#">Artigo 2 | data </a></li>
-                <li><a href="#">Artigo 1 | data </a></li>
+                <li><a href="#"> Apresentação | 20/01/21 </a></li>
             </ul>
         </section>
 
         <section class="publi">
             <h3>Publicidade</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid inventore culpa? Molestiae nihil optio quibusdam cupiditate harum ut pariatur deleniti ea consequuntur minima, veniam illo suscipit quod id omnis?
-                Porro quo, blanditiis nobis maxime natus perferendis hic distinctio similique enim magnam debitis consequuntur provident, dicta rerum error in vel pariatur ipsam suscipit voluptates eligendi nostrum. Harum tempore ullam obcaecati.
-                Minima qui eius nisi et beatae ipsam ipsa corrupti quam fugiat ut fuga, sed cupiditate! Placeat nihil qui consectetur odio sint officiis asperiores, quos minima maiores voluptatum fugit soluta natus?</p>
+            <img src="../images/publi/instagram.png" alt="Nos siga no Instagram" title="Nos siga no Instagram">
+            <img src="../images/publi/recode.png" alt="Conheça a Recode" title="Conheça a Recode">
         </section>
 
         <section class="novidades">
             <h3>Novidades</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem, id suscipit provident aliquam consectetur deserunt consequuntur necessitatibus sapiente magnam odit ut earum aliquid neque nihil! Minima sequi eos porro.
-                Ab perferendis illo assumenda maiores harum itaque fuga dignissimos et earum dolore omnis officia veritatis laborum reprehenderit rerum, distinctio, iusto, perspiciatis vel ea repellendus eos consequuntur tenetur autem repellat? Quod.
-                Voluptatibus, reprehenderit impedit beatae minima et officiis molestiae tempore tempora consectetur similique quas. Impedit consectetur facilis nam eos aut? Quo laboriosam porro accusantium ipsa nobis quisquam accusamus, nesciunt soluta perspiciatis.
-                Rem, corporis provident! Quae suscipit, iusto reiciendis voluptas culpa dignissimos quisquam fuga harum, sed dolore laudantium in! Velit itaque odio ea! Et dolore eaque itaque! Doloremque atque porro vitae optio.</p>
+            <p>Conheça nossas trilhas de cursos clicando em <strong>Cursos</strong>!</p>
         </section>
 
     </main>
