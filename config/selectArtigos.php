@@ -19,7 +19,7 @@ require_once 'conexaobd.php';
             </div>
             <h1><?php echo $dados['titulo']; ?></h1>
             <h3><?php echo $dados['subtitulo'];?></h3>
-            <h5>Escrito por <?php echo $dados['nome'];?></h5>
+            <h5>Escrito por: <?php echo $dados['nome'];?></h5>
             <hr>
             <p>
                 <?php echo $dados['texto'];?>
